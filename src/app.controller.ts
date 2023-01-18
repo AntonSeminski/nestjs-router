@@ -17,7 +17,7 @@ export class AppController {
     let hostname = host.substring(0, host.indexOf('.localhost'));
     console.log(`hostname: ${hostname}`)
 
-    hostname = '127.0.01:3000' //mock
+    // hostname = '127.0.01:3000' //mock
     console.log(`go to url: http:/${hostname}${originUrl}`)
 
     try {
