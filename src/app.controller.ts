@@ -18,7 +18,7 @@ export class AppController {
     let hostname = host.substring(0, host.indexOf('.localhost'));
     console.log(`hostname: ${hostname}`)
 
-    hostname = '127.0.01:3000' //mock
+    // hostname = '127.0.01:3000' //mock
 
     try {
       return  (await firstValueFrom(this.httpService.get(`http:/${hostname}${originUrl}`, {}))).data;
